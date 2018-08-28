@@ -1,0 +1,11 @@
+---
+- hosts: examplegroup
+  tasks:
+  - include_role:
+      name: example
+    vars:
+      examplevar: 'x'
+  - include_role:
+      name: example2
+    vars:
+      examplevar: 'y'

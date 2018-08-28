@@ -1,0 +1,9 @@
+---
+- name: install examplefile
+  template:
+    src: examplefile.j2
+    dest: /tmp/examplefile
+    owner: root
+    group: root
+    mode: 0644
+  become: yes
